@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      const container = document.createElement("div");
+      container.classList.add("temp");
+      const container2 = document.createElement("div2");
+      container2.classList.add("calculator");
+      const container3 = document.createElement("div3");
+      container3.classList.add("display");
+      const container4 = document.createElement("div4");
+      container4.classList.add("half");
+      const container5 = document.createElement("div5");
+      container5.classList.add("half");
+      let button = document.createElement("button");
+      button.classList.add("button");
+
+      container2.appendChild(container3);
+      container2.appendChild(container4);
+      container2.appendChild(container5);
+      container5.appendChild(button);
+      container.appendChild(container2);
+      document.body.appendChild(container);
+    </script>
+  </body>
+</html>
