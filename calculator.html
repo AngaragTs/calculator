@@ -10,21 +10,168 @@
     <script>
       const container = document.createElement("div");
       container.classList.add("temp");
-      const container2 = document.createElement("div2");
+      const container2 = document.createElement("div");
       container2.classList.add("calculator");
-      const container3 = document.createElement("div3");
-      container3.classList.add("display");
-      const container4 = document.createElement("div4");
-      container4.classList.add("half");
-      const container5 = document.createElement("div5");
-      container5.classList.add("half");
-      let button = document.createElement("button");
-      button.classList.add("button");
 
-      container2.appendChild(container3);
+      const input1 = document.createElement("div");
+      input1.classList.add("display");
+
+      const container4 = document.createElement("div");
+      container4.classList.add("half");
+
+      const container5 = document.createElement("div");
+      container5.classList.add("half");
+
+      const button = document.createElement("button");
+      button.classList.add("button");
+      button.innerText = "1";
+      button.onclick = number1;
+      function number1() {
+        input1.innerText += "1";
+      }
+
+      const button2 = document.createElement("button");
+      button2.classList.add("button");
+      button2.innerText = "2";
+      button2.onclick = number2;
+      function number2() {
+        input1.innerText += "2";
+      }
+
+      const button3 = document.createElement("button");
+      button3.classList.add("button");
+      button3.innerText = "3";
+      button3.onclick = number3;
+      function number3() {
+        input1.innerText += "3";
+      }
+
+      const button4 = document.createElement("button");
+      button4.classList.add("button");
+      button4.innerText = "4";
+      button4.onclick = number4;
+      function number4() {
+        input1.innerText += "4";
+      }
+
+      const button5 = document.createElement("button");
+      button5.classList.add("button");
+      button5.innerText = "5";
+      button5.onclick = number5;
+      function number5() {
+        input1.innerText += "5";
+      }
+
+      const button6 = document.createElement("button");
+      button6.classList.add("button");
+      button6.innerText = "6";
+      button6.onclick = number6;
+      function number6() {
+        input1.innerText += "6";
+      }
+
+      const button7 = document.createElement("button");
+      button7.classList.add("button");
+      button7.innerText = "7";
+      button7.onclick = number7;
+      function number7() {
+        input1.innerText += "7";
+      }
+
+      const button8 = document.createElement("button");
+      button8.classList.add("button");
+      button8.innerText = "8";
+      button8.onclick = number8;
+      function number8() {
+        input1.innerText += "8";
+      }
+
+      const button9 = document.createElement("button");
+      button9.classList.add("button");
+      button9.innerText = "9";
+      button9.onclick = number9;
+      function number9() {
+        input1.innerText += "9";
+      }
+
+      const button10 = document.createElement("button");
+      button10.classList.add("button");
+      button10.innerText = "0";
+      button10.onclick = number10;
+      function number10() {
+        input1.innerText += "0";
+      }
+
+      const button11 = document.createElement("button");
+      button11.classList.add("equal");
+      button11.innerText = "=";
+      button11.onclick = number11;
+      function number11() {
+        input1.innerText += "=";
+      }
+
+      const button12 = document.createElement("button");
+      button12.classList.add("equal");
+      button12.innerText = "+";
+      button12.onclick = number12;
+      function number12() {
+        input1.innerText += "+";
+      }
+
+      const button13 = document.createElement("button");
+      button13.classList.add("equal");
+      button13.innerText = "-";
+      button13.onclick = number13;
+      function number13() {
+        input1.innerText += "-";
+      }
+
+      const button14 = document.createElement("button");
+      button14.classList.add("equal");
+      button14.innerText = "/";
+      button14.onclick = number14;
+      function number14() {
+        input1.innerText += "/";
+      }
+
+      const button15 = document.createElement("button");
+      button15.classList.add("equal");
+      button15.innerText = "*";
+      button15.onclick = number15;
+      function number15() {
+        input1.innerText += "*";
+      }
+
+      const button16 = document.createElement("button");
+      button16.classList.add("equal");
+      button16.innerText = "C";
+      button16.onclick = number16;
+      function number16() {
+        input1.innerText += "";
+      }
+
+      container5.appendChild(button);
+      container5.appendChild(button2);
+      container5.appendChild(button3);
+      container5.appendChild(button4);
+      container5.appendChild(button5);
+      container5.appendChild(button6);
+      container5.appendChild(button7);
+      container5.appendChild(button8);
+      container5.appendChild(button9);
+      container5.appendChild(button10);
+      container5.appendChild(button11);
+
+      container4.appendChild(button12);
+      container4.appendChild(button13);
+      container4.appendChild(button14);
+      container4.appendChild(button15);
+      container4.appendChild(button16);
+
+      container2.appendChild(input1);
       container2.appendChild(container4);
       container2.appendChild(container5);
-      container5.appendChild(button);
+
       container.appendChild(container2);
       document.body.appendChild(container);
     </script>
