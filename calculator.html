@@ -144,10 +144,16 @@
 
       const button16 = document.createElement("button");
       button16.classList.add("equal");
-      button16.innerText = "C";
+      button16.innerText = "AC";
       button16.onclick = number16;
       function number16() {
-        input1.innerText += "";
+        input1.innerText = "";
+      }
+
+      function total() {
+        console.log(input1.innerText);
+        button11 = eval(input1.innerText);
+        input1.innerText = button11;
       }
 
       container5.appendChild(button);

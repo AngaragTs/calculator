@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="gamestyle.css" />
+  </head>
+  <body>
+    <script>
+      const container = document.createElement("div");
+      container.classList.add("div");
+
+      const temp = document.createElement("div");
+      temp.classList.add("temp");
+
+      const display = document.createElement("div");
+      display.classList.add("display");
+
+      const text = document.createElement("div");
+      text.classList.add("text");
+      text.innerText = "Click to Guess the number";
+
+      const text2 = document.createElement("div");
+      text2.classList.add("text2");
+      text2.innerText = "Selected number between 1-100";
+
+      const button = document.createElement("button");
+      button.classList.add("button");
+      button.innerText = "click to Guess";
+
+      temp.appendChild(text);
+      temp.appendChild(text2);
+      temp.appendChild(display);
+      temp.appendChild(button);
+      container.appendChild(temp);
+      document.body.appendChild(container);
+    </script>
+  </body>
+</html>
